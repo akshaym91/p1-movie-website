@@ -38,5 +38,3 @@ class TvShow(Video):
 
     def get_local_listing(self):
         pass
-
-    # Video.__init__(self, title, duration)

@@ -48,8 +48,8 @@
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-overlay, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
+        $(document).on('click', '.hanging-close, .modal-overlay, .modal',         function (event) {
+            // Remove the src so the player itself gets removed, as             this is the only
             // reliable way to ensure the video stops playing in IE
             $("#trailer-video-container").empty();
             $("#trailer-video-name").empty();
@@ -59,7 +59,7 @@
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id');
             var trailerName = $(this).attr('data-trailer-name');
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId             + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
               'id': 'trailer-video',
               'type': 'text-html',
@@ -84,17 +84,17 @@
         <div class="modal-overlay"></div>
         <div class="modal-container">
             <div class="modal-header">
-                <button class="btn btn-clear float-right hanging-close" data-dismiss="modal"></button>
-                <div class="modal-title" id="trailer-video-name">Modal title</div>
+                <button class="btn btn-clear float-right hanging-close"                 data-dismiss="modal"></button>
+                <div class="modal-title" id="trailer-video-name">                Modal title</div>
             </div>
             <div class="modal-body">
                 <div class="content">
-                    <div class="scale-media" id="trailer-video-container" class="video-responsive">
+                    <div class="scale-media" id="trailer-video-container"                     class="video-responsive">
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button data-dismiss="modal" class="btn btn-link hanging-close">Close</button>
+                <button data-dismiss="modal" class="btn btn-link                 hanging-close">Close</button>
                 <button class="btn btn-primary">Share</button>
             </div>
         </div>
@@ -112,112 +112,112 @@
       <div class="columns">
 <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 column col-2 movie-tile" data-trailer-youtube-id="4KPTXpQehio" data-trailer-name="Toy Story" data-toggle="modal" data-target="#trailer">
     <div class="card-image" >
-        <img src="http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" class="img-responsive poster" width="220" height="342"/>
+        <img src="http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" class="img-responsive poster"         width="220" height="342"/>
     </div>
     <div class="card-header">
         <h4 class="card-title">Toy Story</h4>
         <h6 class="card-meta">Movie Type</h6>
     </div>
     <div class="card-body">
-        To make a contribution to the world by making tools for the mind that advance humankind.
+        To make a contribution to the world by making tools for the mind         that advance humankind.
     </div>
 </div>
 
 
 <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 column col-2 movie-tile" data-trailer-youtube-id="-9ceBgWV8io" data-trailer-name="Avatar" data-toggle="modal" data-target="#trailer">
     <div class="card-image" >
-        <img src="https://goo.gl/ZUxUOb" class="img-responsive poster" width="220" height="342"/>
+        <img src="https://goo.gl/ZUxUOb" class="img-responsive poster"         width="220" height="342"/>
     </div>
     <div class="card-header">
         <h4 class="card-title">Avatar</h4>
         <h6 class="card-meta">Movie Type</h6>
     </div>
     <div class="card-body">
-        To make a contribution to the world by making tools for the mind that advance humankind.
+        To make a contribution to the world by making tools for the mind         that advance humankind.
     </div>
 </div>
 
 
 <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 column col-2 movie-tile" data-trailer-youtube-id="2ZBPjt9NQtk" data-trailer-name="Dear Zindagi" data-toggle="modal" data-target="#trailer">
     <div class="card-image" >
-        <img src="https://goo.gl/1ecVR5" class="img-responsive poster" width="220" height="342"/>
+        <img src="https://goo.gl/1ecVR5" class="img-responsive poster"         width="220" height="342"/>
     </div>
     <div class="card-header">
         <h4 class="card-title">Dear Zindagi</h4>
         <h6 class="card-meta">Movie Type</h6>
     </div>
     <div class="card-body">
-        To make a contribution to the world by making tools for the mind that advance humankind.
+        To make a contribution to the world by making tools for the mind         that advance humankind.
     </div>
 </div>
 
 
 <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 column col-2 movie-tile" data-trailer-youtube-id="XCwy6lW5Ixc" data-trailer-name="School of Rock" data-toggle="modal" data-target="#trailer">
     <div class="card-image" >
-        <img src="http://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg" class="img-responsive poster" width="220" height="342"/>
+        <img src="http://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg" class="img-responsive poster"         width="220" height="342"/>
     </div>
     <div class="card-header">
         <h4 class="card-title">School of Rock</h4>
         <h6 class="card-meta">Movie Type</h6>
     </div>
     <div class="card-body">
-        To make a contribution to the world by making tools for the mind that advance humankind.
+        To make a contribution to the world by making tools for the mind         that advance humankind.
     </div>
 </div>
 
 
 <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 column col-2 movie-tile" data-trailer-youtube-id="c3sBBRxDAqk" data-trailer-name="Ratatouille" data-toggle="modal" data-target="#trailer">
     <div class="card-image" >
-        <img src="http://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg" class="img-responsive poster" width="220" height="342"/>
+        <img src="http://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg" class="img-responsive poster"         width="220" height="342"/>
     </div>
     <div class="card-header">
         <h4 class="card-title">Ratatouille</h4>
         <h6 class="card-meta">Movie Type</h6>
     </div>
     <div class="card-body">
-        To make a contribution to the world by making tools for the mind that advance humankind.
+        To make a contribution to the world by making tools for the mind         that advance humankind.
     </div>
 </div>
 
 
 <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 column col-2 movie-tile" data-trailer-youtube-id="5nOF93SzX6s" data-trailer-name="Midnight in Paris" data-toggle="modal" data-target="#trailer">
     <div class="card-image" >
-        <img src="http://tinyurl.com/7zebr4h" class="img-responsive poster" width="220" height="342"/>
+        <img src="http://tinyurl.com/7zebr4h" class="img-responsive poster"         width="220" height="342"/>
     </div>
     <div class="card-header">
         <h4 class="card-title">Midnight in Paris</h4>
         <h6 class="card-meta">Movie Type</h6>
     </div>
     <div class="card-body">
-        To make a contribution to the world by making tools for the mind that advance humankind.
+        To make a contribution to the world by making tools for the mind         that advance humankind.
     </div>
 </div>
 
 
 <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 column col-2 movie-tile" data-trailer-youtube-id="mfmrPu43DF8" data-trailer-name="Hunger Games" data-toggle="modal" data-target="#trailer">
     <div class="card-image" >
-        <img src="http://tinyurl.com/79m8ppm" class="img-responsive poster" width="220" height="342"/>
+        <img src="http://tinyurl.com/79m8ppm" class="img-responsive poster"         width="220" height="342"/>
     </div>
     <div class="card-header">
         <h4 class="card-title">Hunger Games</h4>
         <h6 class="card-meta">Movie Type</h6>
     </div>
     <div class="card-body">
-        To make a contribution to the world by making tools for the mind that advance humankind.
+        To make a contribution to the world by making tools for the mind         that advance humankind.
     </div>
 </div>
 
 
 <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 column col-2 movie-tile" data-trailer-youtube-id="IfvnbER_6sQ" data-trailer-name="Kirik Party" data-toggle="modal" data-target="#trailer">
     <div class="card-image" >
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Kirik_Part_Poster.jpg/220px-Kirik_Part_Poster.jpg" class="img-responsive poster" width="220" height="342"/>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Kirik_Part_Poster.jpg/220px-Kirik_Part_Poster.jpg" class="img-responsive poster"         width="220" height="342"/>
     </div>
     <div class="card-header">
         <h4 class="card-title">Kirik Party</h4>
         <h6 class="card-meta">Movie Type</h6>
     </div>
     <div class="card-body">
-        To make a contribution to the world by making tools for the mind that advance humankind.
+        To make a contribution to the world by making tools for the mind         that advance humankind.
     </div>
 </div>
 

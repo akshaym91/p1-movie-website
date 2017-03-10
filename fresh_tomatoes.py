@@ -2,10 +2,6 @@ import webbrowser
 import os
 import re
 
-# <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-# <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-#     # <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-
 # Styles and scripting for the page
 main_page_head = '''
 <!DOCTYPE html>
@@ -57,8 +53,10 @@ main_page_head = '''
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-overlay, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
+        $(document).on('click', '.hanging-close, .modal-overlay, .modal',\
+         function (event) {
+            // Remove the src so the player itself gets removed, as \
+            this is the only
             // reliable way to ensure the video stops playing in IE
             $("#trailer-video-container").empty();
             $("#trailer-video-name").empty();
@@ -68,8 +66,10 @@ main_page_head = '''
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id');
             var trailerName = $(this).attr('data-trailer-name');
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId\
+             + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append(\
+            $("<iframe></iframe>", {
               'id': 'trailer-video',
               'type': 'text-html',
               'src': sourceUrl,
@@ -97,17 +97,21 @@ main_page_content = '''
         <div class="modal-overlay"></div>
         <div class="modal-container">
             <div class="modal-header">
-                <button class="btn btn-clear float-right hanging-close" data-dismiss="modal"></button>
-                <div class="modal-title" id="trailer-video-name">Modal title</div>
+                <button class="btn btn-clear float-right hanging-close" \
+                data-dismiss="modal"></button>
+                <div class="modal-title" id="trailer-video-name">\
+                Modal title</div>
             </div>
             <div class="modal-body">
                 <div class="content">
-                    <div class="scale-media" id="trailer-video-container" class="video-responsive">
+                    <div class="scale-media" id="trailer-video-container" \
+                    class="video-responsive">
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button data-dismiss="modal" class="btn btn-link hanging-close">Close</button>
+                <button data-dismiss="modal" class="btn btn-link \
+                hanging-close">Close</button>
                 <button class="btn btn-primary">Share</button>
             </div>
         </div>
@@ -131,16 +135,20 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 column col-2 movie-tile" data-trailer-youtube-id="{trailer_youtube_url}" data-trailer-name="{movie_title}" data-toggle="modal" data-target="#trailer">
+<div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 column \
+col-2 movie-tile" data-trailer-youtube-id="{trailer_youtube_url}" \
+data-trailer-name="{movie_title}" data-toggle="modal" data-target="#trailer">
     <div class="card-image" >
-        <img src="{poster_image_url}" class="img-responsive poster" width="220" height="342"/>
+        <img src="{poster_image_url}" class="img-responsive poster"\
+         width="220" height="342"/>
     </div>
     <div class="card-header">
         <h4 class="card-title">{movie_title}</h4>
         <h6 class="card-meta">Movie Type</h6>
     </div>
     <div class="card-body">
-        To make a contribution to the world by making tools for the mind that advance humankind.
+        To make a contribution to the world by making tools for the mind\
+         that advance humankind.
     </div>
 </div>
 

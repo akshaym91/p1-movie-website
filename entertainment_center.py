@@ -40,7 +40,7 @@ kirikParty = media.Movie(
     "Kirik Party",
     "Kirik Party is a 2016 Kannada comedy film \
     and released by Rakshit Shetty Pictures.",
-    "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Kirik_Part_Poster.jpg/220px-Kirik_Part_Poster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Kirik_Part_Poster.jpg/220px-Kirik_Part_Poster.jpg",  # NOQA
     "https://www.youtube.com/watch?v=IfvnbER_6sQ")
 
 midnight_in_paris = media.Movie(
